@@ -1,0 +1,293 @@
+body {
+
+  margin: 0;
+
+  background: #141414;
+
+  font-family: Arial, sans-serif;
+
+  color: white;
+
+}
+
+.container {
+
+  padding: 30px;
+
+}
+
+.title {
+
+  color: #e50914;
+
+  text-align: center;
+
+  font-size: 48px;
+
+  margin-bottom: 30px;
+
+}
+
+.search-area {
+
+  display: flex;
+
+  gap: 10px;
+
+  justify-content: center;
+
+  margin-bottom: 40px;
+
+  flex-wrap: wrap;
+
+}
+
+input {
+
+  padding: 14px;
+
+  width: 300px;
+
+  border-radius: 8px;
+
+  border: none;
+
+  background: #222;
+
+  color: white;
+
+  font-size: 16px;
+
+}
+
+button,
+select {
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #e50914;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+}
+
+.actor-profile {
+
+  display: flex;
+
+  gap: 30px;
+
+  margin-bottom: 50px;
+
+  background: #1f1f1f;
+
+  padding: 25px;
+
+  border-radius: 20px;
+
+  align-items: center;
+
+}
+
+.actor-image {
+
+  width: 220px;
+
+  border-radius: 20px;
+
+}
+
+.actor-info h2 {
+
+  font-size: 42px;
+
+  margin-bottom: 10px;
+
+  color: white;
+
+}
+
+.sub-title {
+
+  color: #aaa;
+
+  margin-bottom: 20px;
+
+}
+
+.biography {
+
+  line-height: 1.7;
+
+  color: #ddd;
+
+}
+
+.film-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fill, minmax(250px, 1fr));
+
+  gap: 25px;
+
+}
+
+.film-card {
+
+  background: #1f1f1f;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  padding: 18px;
+
+  position: relative;
+
+  transition: 0.3s;
+
+}
+
+.film-card:hover {
+
+  transform: scale(1.03);
+
+}
+
+.poster {
+
+  width: 100%;
+
+  border-radius: 14px;
+
+  margin-bottom: 15px;
+
+}
+
+.featured {
+
+  border: 2px solid #e50914;
+
+}
+
+.featured-badge {
+
+  position: absolute;
+
+  top: 12px;
+
+  left: 12px;
+
+  background: #e50914;
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+}
+
+.character {
+
+  color: #bbb;
+
+}
+
+.overview {
+
+  color: #ddd;
+
+  line-height: 1.5;
+
+}
+
+.ott-button {
+
+  width: 100%;
+
+  margin-top: 15px;
+
+}
+
+.ott-box {
+
+  margin-top: 15px;
+
+}
+
+.ott-logos {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 10px;
+
+}
+
+.ott-badge {
+
+  background: #e50914;
+
+  color: white;
+
+  padding: 8px 14px;
+
+  border-radius: 999px;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+}
+
+.loading {
+
+  text-align: center;
+
+  margin-top: 50px;
+
+}
+
+.spinner {
+
+  width: 50px;
+
+  height: 50px;
+
+  border: 5px solid #333;
+
+  border-top: 5px solid #e50914;
+
+  border-radius: 50%;
+
+  margin: auto;
+
+  animation: spin 1s linear infinite;
+
+}
+
+@keyframes spin {
+
+  100% {
+
+    transform: rotate(360deg);
+
+  }
+
+}
